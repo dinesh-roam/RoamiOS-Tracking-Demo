@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "07BC8F2C-8D2B-42F9-8F17-1745D68CA3D3"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7021AFA0-A85C-49AD-A1D3-E54B8F680830"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RoamDemo/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7021AFA0-A85C-49AD-A1D3-E54B8F680830 - 6d5513cfc664f39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UIButton in variable initialization expression of RoamDemo.MapViewController.logoutButton : __C.UIButton"
+                  moduleName = "RoamDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roam/Documents/RoamDemo/RoamDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "29">
+               </Location>
+               <Location
+                  uuid = "7021AFA0-A85C-49AD-A1D3-E54B8F680830 - d9b9809a4403855a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RoamDemo.MapViewController.logoutButton.getter : __C.UIButton"
+                  moduleName = "RoamDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roam/Documents/RoamDemo/RoamDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "49">
+               </Location>
+               <Location
+                  uuid = "7021AFA0-A85C-49AD-A1D3-E54B8F680830 - a888741be1ab5d7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RoamDemo.MapViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; RoamDemo.MapViewController"
+                  moduleName = "RoamDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roam/Documents/RoamDemo/RoamDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "158">
+               </Location>
+               <Location
+                  uuid = "7021AFA0-A85C-49AD-A1D3-E54B8F680830 - 4b3ce7ffb4d6a6df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RoamDemo.MapViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;RoamDemo.MapViewController&gt;"
+                  moduleName = "RoamDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/roam/Documents/RoamDemo/RoamDemo/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "115">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
