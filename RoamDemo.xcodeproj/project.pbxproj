@@ -14,7 +14,7 @@
 		D69501042AFC922200410523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69501022AFC922200410523 /* Main.storyboard */; };
 		D69501062AFC922400410523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69501052AFC922400410523 /* Assets.xcassets */; };
 		D69501092AFC922400410523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69501072AFC922400410523 /* LaunchScreen.storyboard */; };
-		D69501112AFC947800410523 /* RomeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69501102AFC947800410523 /* RomeHelper.swift */; };
+		D69501112AFC947800410523 /* RoamHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69501102AFC947800410523 /* RoamHelper.swift */; };
 		D69501142AFC94C700410523 /* Roam.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69501122AFC94BB00410523 /* Roam.xcframework */; };
 		D69501152AFC94C700410523 /* Roam.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D69501122AFC94BB00410523 /* Roam.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D69501242AFC959200410523 /* AWSAuthCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D695011D2AFC958300410523 /* AWSAuthCore.xcframework */; };
@@ -61,7 +61,7 @@
 		D69501052AFC922400410523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D69501082AFC922400410523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D695010A2AFC922400410523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D69501102AFC947800410523 /* RomeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomeHelper.swift; sourceTree = "<group>"; };
+		D69501102AFC947800410523 /* RoamHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamHelper.swift; sourceTree = "<group>"; };
 		D69501122AFC94BB00410523 /* Roam.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Roam.xcframework; sourceTree = "<group>"; };
 		D69501182AFC958300410523 /* AWSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSCore.xcframework; sourceTree = "<group>"; };
 		D69501192AFC958300410523 /* AWSCognitoIdentityProvider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSCognitoIdentityProvider.xcframework; sourceTree = "<group>"; };
@@ -114,7 +114,7 @@
 				D69500FE2AFC922200410523 /* SceneDelegate.swift */,
 				D69501002AFC922200410523 /* LoginViewController.swift */,
 				D60D37A42AFCD15100A7C3C8 /* MapViewController.swift */,
-				D69501102AFC947800410523 /* RomeHelper.swift */,
+				D69501102AFC947800410523 /* RoamHelper.swift */,
 				D69501022AFC922200410523 /* Main.storyboard */,
 				D69501052AFC922400410523 /* Assets.xcassets */,
 				D69501072AFC922400410523 /* LaunchScreen.storyboard */,
@@ -210,7 +210,7 @@
 			files = (
 				D69501012AFC922200410523 /* LoginViewController.swift in Sources */,
 				D69500FD2AFC922200410523 /* AppDelegate.swift in Sources */,
-				D69501112AFC947800410523 /* RomeHelper.swift in Sources */,
+				D69501112AFC947800410523 /* RoamHelper.swift in Sources */,
 				D60D37A52AFCD15100A7C3C8 /* MapViewController.swift in Sources */,
 				D69500FF2AFC922200410523 /* SceneDelegate.swift in Sources */,
 			);

@@ -33,7 +33,6 @@ class MapViewController: UIViewController {
         // Add MapView
         view.addSubview(mapView)
         mapView.frame = view.bounds
-//        mapView.showsUserLocation = true
 
         // Add Logout Button at the bottom
         view.addSubview(logoutButton)
@@ -55,21 +54,8 @@ class MapViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        NotificationCenter.default.removeObserver(self)
-        print("MapViewController will disappear")
-    }
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        NotificationCenter.default.removeObserver(self)
-        print("MapViewController Did disappear")
-    }
-    
-    // Add deinit to clean up resources if necessary
       deinit {
           NotificationCenter.default.removeObserver(self)
-          print("MapViewController deinitialized")
       }
 
     @objc func logoutButtonTapped() {

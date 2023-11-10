@@ -1,5 +1,5 @@
 //
-//  RomeHelper.swift
+//  RoamHelper.swift
 //  RoamDemo
 //
 //  Created by Roam on 09/11/23.
@@ -26,7 +26,8 @@ final class RoamHelper {
 
     func initalize() {
         Roam.delegate = self
-        Roam.initialize("ac900ee38b257e76ea41b9069abfeb0004277632a5063b604807a6014f60cfd5")
+        Roam.initialize("")
+        #error("Add Publish Key")
     }
     
     func requestLocationPermission() {

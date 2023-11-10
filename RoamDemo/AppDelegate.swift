@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         RoamHelper.shared.initalize()
         RoamHelper.shared.requestLocationPermission()
+        #error("Add Bundle id")
         return true
     }
 
