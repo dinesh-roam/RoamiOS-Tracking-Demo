@@ -30,13 +30,9 @@ final class RoamHelper {
         #error("Add Publish Key")
     }
     
-    func requestLocationPermission() {
-        Roam.requestLocation()
-    }
-    
     //MARK: -
     func setupRoam(completion: @escaping (Error?) -> Void) {
-        
+        Roam.requestLocation()
         if let roamUserId = UserDefaults.standard.string(forKey: "ROAM_USERID") {
             //        if let roamUserId = storage.roamUser {
             Roam.getUser(roamUserId) { [weak self] roamUser, error in
