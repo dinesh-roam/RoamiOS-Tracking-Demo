@@ -27,12 +27,12 @@ final class RoamHelper {
     func initalize() {
         Roam.delegate = self
         Roam.initialize("")
+        Roam.requestLocation()
         #error("Add Publish Key")
     }
     
     //MARK: -
     func setupRoam(completion: @escaping (Error?) -> Void) {
-        Roam.requestLocation()
         if let roamUserId = UserDefaults.standard.string(forKey: "ROAM_USERID") {
             //        if let roamUserId = storage.roamUser {
             Roam.getUser(roamUserId) { [weak self] roamUser, error in
@@ -46,17 +46,17 @@ final class RoamHelper {
                     Roam.toggleEvents(Geofence: false,Trip: false,Location: true,MovingGeofence: false) { user, error in
                         print(user, error)
 //                    }
-//                    if let listener = roamUser?.locationListener,
-//                       !listener {
+                    if let listener = roamUser?.locationListener,
+                       !listener {
                         print("Roam Toggling listener")
                         Roam.toggleListener(Events: true, Locations: true) { roamUser, error in
                             print(roamUser, error)
                             self?.continueToSession(with: roamUserId, completion: completion)
                         }
-//                    } else {
-//                        print("Roam No toggling")
-//                        self?.continueToSession(with: roamUserId, completion: completion)
-//                    }
+                    } else {
+                        print("Roam No toggling")
+                        self?.continueToSession(with: roamUserId, completion: completion)
+                    }
                     }
                 }
             }
