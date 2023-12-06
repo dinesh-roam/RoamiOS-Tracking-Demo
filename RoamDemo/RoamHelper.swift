@@ -7,6 +7,7 @@
 
 import Foundation
 import Roam
+import UIKit
 
 final class RoamHelper {
     
@@ -25,10 +26,14 @@ final class RoamHelper {
     //MARK: - ROAM Methods
 
     func initalize() {
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidEnterBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationWillForeground(_:)), name: UIApplication.willEnterForegroundNotification, object: nil)
         Roam.delegate = self
+        
         Roam.initialize("")
+        
         Roam.requestLocation()
-        #error("Add Publish Key")
+//        #error("Add Publish Key")
     }
     
     //MARK: -
@@ -95,6 +100,7 @@ final class RoamHelper {
     }
     
     fileprivate func startRoamTracking() {
+        Roam.setTrackingInAppState(.Foreground)
         Roam.updateLocationWhenStationary(300)
         //        DispatchQueue.main.async {
         let locationData = RoamPublish()
@@ -132,4 +138,17 @@ extension RoamHelper: RoamDelegate {
     func onError(_ error: RoamError) {
         print(error.message)
     }
+    
+    @objc func applicationDidEnterBackground(_ notification: NSNotification) {
+       print("applicationDidEnterBackground")
+        Roam.setTrackingInAppState(.Background)
+
+   }
+   
+   
+    @objc func applicationWillForeground(_ notification: NSNotification) {
+       print("applicationWillForeground")
+        Roam.setTrackingInAppState(.Foreground)
+   }
+
 }
