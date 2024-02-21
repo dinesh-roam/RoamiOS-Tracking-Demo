@@ -33,7 +33,7 @@ final class RoamHelper {
         Roam.initialize("")
         
         Roam.requestLocation()
-//        #error("Add Publish Key")
+        #error("Add Publish Key")
     }
     
     //MARK: -
@@ -126,6 +126,67 @@ final class RoamHelper {
     
 }
 
+//MARK: - Login Without User
+extension RoamHelper {
+    
+    func toggleEventandListner() {
+        print("Roam Toggling events")
+        Roam.toggleEvents(Geofence: false,Trip: false,Location: true,MovingGeofence: false){ user, error in
+            print(user, error)
+            
+            Roam.toggleListener(Events: true, Locations: true) { roamUser, error in
+                print(roamUser, error)
+                self.registerConnector()
+            }
+        }
+    }
+    
+    func registerConnector() {
+        let host: String = "HOST URL"
+        let port: UInt16 = 8084  //PORT Number
+        let connectionType: RoamMqttConnectionType = .WSS  // Connection Type
+        let topic: String = ""  // Publish Topic
+        let mqttVersion: String = "" // MQTT version 3.1.1 or 5.0
+        let username = "username"
+        let password = "password"
+
+        let connector = RoamMqttConnector.Builder(host: host, port: port, connectionType: connectionType, topic: topic)
+            .setCredentials(username: username, password: password)
+            .setMQTTVersion(mqttVersion)
+            .build()
+        
+        Roam.registerConnector(connector)
+    }
+    
+    func deRegisterConnector() {
+        let host: String = "HOST URL"
+        let port: UInt16 = 8084  //PORT Number
+        let connectionType: RoamMqttConnectionType = .WSS  // Connection Type
+        let topic: String = ""  // Publish Topic
+        let mqttVersion: String = "" // MQTT version 3.1.1 or 5.0
+        let username = "username"
+        let password = "password"
+
+        let connector = RoamMqttConnector.Builder(host: host, port: port, connectionType: connectionType, topic: topic)
+            .setCredentials(username: username, password: password)
+            .setMQTTVersion(mqttVersion)
+            .build()
+        
+        Roam.deRegisterConnector(connector)
+        
+    }
+    
+    func startSelfTracking(completion: @escaping (Error?) -> Void) {
+        Roam.setTrackingInAppState(.Foreground)
+        Roam.updateLocationWhenStationary(300)
+        Roam.startTracking(.balanced) { tracking, error in
+            print("Roam tracking: \(tracking ?? "na")")
+        }
+        Roam.updateCurrentLocation(10)
+    }
+    
+}
+
 //MARK: - RoamDelegate
 
 extension RoamHelper: RoamDelegate {
@@ -138,7 +199,27 @@ extension RoamHelper: RoamDelegate {
     func onError(_ error: RoamError) {
         print(error.message)
     }
-    
+
+    //RoamDelegate Method
+    func didChangeMQTTStatus(_ status: String) {
+        print(status)
+        switch status {
+        case "connecting":
+            break;
+        case "connected":
+            self.startSelfTracking { error in
+                print(error)
+            }
+        case "disconnected":
+            break;
+        default:
+            break;
+        }
+    }
+}
+
+//MARK: -
+extension RoamHelper {
     @objc func applicationDidEnterBackground(_ notification: NSNotification) {
        print("applicationDidEnterBackground")
         Roam.setTrackingInAppState(.Background)
@@ -150,5 +231,4 @@ extension RoamHelper: RoamDelegate {
        print("applicationWillForeground")
         Roam.setTrackingInAppState(.Foreground)
    }
-
 }

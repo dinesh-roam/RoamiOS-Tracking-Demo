@@ -24,6 +24,8 @@ class MapViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
+    
+    var loginType: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,16 +40,20 @@ class MapViewController: UIViewController {
         view.addSubview(logoutButton)
         NSLayoutConstraint.activate([
             logoutButton.heightAnchor.constraint(equalToConstant: 60),
-            logoutButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
+            logoutButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -0),
             logoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
             logoutButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0)
         ])
         
         logoutButton.addTarget(self, action: #selector(logoutButtonTapped), for: .touchUpInside)
-        RoamHelper.shared.setupRoam { error in
-            
-        }
         
+        if loginType == "LoginWithUser" {
+            RoamHelper.shared.setupRoam { error in
+                print(error)
+            }
+        }else if loginType == "LoginWithOutUser" { //Custom MQTT
+            RoamHelper.shared.registerConnector()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

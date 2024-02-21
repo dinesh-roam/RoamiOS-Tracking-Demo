@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		D60D37A52AFCD15100A7C3C8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60D37A42AFCD15100A7C3C8 /* MapViewController.swift */; };
+		D63387EA2B860A22000B5DB6 /* AWSAuthCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63387A32B845E3F000B5DB6 /* AWSAuthCore.xcframework */; };
+		D63387EB2B860A22000B5DB6 /* AWSAuthCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D63387A32B845E3F000B5DB6 /* AWSAuthCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D63387EC2B860A22000B5DB6 /* AWSCognitoIdentityProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D633879E2B845E3F000B5DB6 /* AWSCognitoIdentityProvider.xcframework */; };
+		D63387ED2B860A22000B5DB6 /* AWSCognitoIdentityProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D633879E2B845E3F000B5DB6 /* AWSCognitoIdentityProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D63387EE2B860A22000B5DB6 /* AWSCognitoIdentityProviderASF.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63387A22B845E3F000B5DB6 /* AWSCognitoIdentityProviderASF.xcframework */; };
+		D63387EF2B860A22000B5DB6 /* AWSCognitoIdentityProviderASF.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D63387A22B845E3F000B5DB6 /* AWSCognitoIdentityProviderASF.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D63387F02B860A22000B5DB6 /* AWSCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63387702B845E3E000B5DB6 /* AWSCore.xcframework */; };
+		D63387F12B860A22000B5DB6 /* AWSCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D63387702B845E3E000B5DB6 /* AWSCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D63387F22B860A22000B5DB6 /* AWSIoT.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63387A02B845E3F000B5DB6 /* AWSIoT.xcframework */; };
+		D63387F32B860A22000B5DB6 /* AWSIoT.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D63387A02B845E3F000B5DB6 /* AWSIoT.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D63387F42B860A23000B5DB6 /* AWSMobileClientXCF.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63387A12B845E3F000B5DB6 /* AWSMobileClientXCF.xcframework */; };
+		D63387F52B860A23000B5DB6 /* AWSMobileClientXCF.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D63387A12B845E3F000B5DB6 /* AWSMobileClientXCF.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D63387F62B860A23000B5DB6 /* MqttCocoaAsyncSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D633879F2B845E3F000B5DB6 /* MqttCocoaAsyncSocket.xcframework */; };
+		D63387F72B860A23000B5DB6 /* MqttCocoaAsyncSocket.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D633879F2B845E3F000B5DB6 /* MqttCocoaAsyncSocket.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D63387F82B860A24000B5DB6 /* Roam.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63387D62B845E4F000B5DB6 /* Roam.xcframework */; };
+		D63387F92B860A24000B5DB6 /* Roam.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D63387D62B845E4F000B5DB6 /* Roam.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D69500FD2AFC922200410523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69500FC2AFC922200410523 /* AppDelegate.swift */; };
 		D69500FF2AFC922200410523 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69500FE2AFC922200410523 /* SceneDelegate.swift */; };
 		D69501012AFC922200410523 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69501002AFC922200410523 /* LoginViewController.swift */; };
@@ -15,20 +31,8 @@
 		D69501062AFC922400410523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69501052AFC922400410523 /* Assets.xcassets */; };
 		D69501092AFC922400410523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69501072AFC922400410523 /* LaunchScreen.storyboard */; };
 		D69501112AFC947800410523 /* RoamHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69501102AFC947800410523 /* RoamHelper.swift */; };
-		D69501142AFC94C700410523 /* Roam.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69501122AFC94BB00410523 /* Roam.xcframework */; };
-		D69501152AFC94C700410523 /* Roam.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D69501122AFC94BB00410523 /* Roam.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D69501242AFC959200410523 /* AWSAuthCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D695011D2AFC958300410523 /* AWSAuthCore.xcframework */; };
-		D69501252AFC959200410523 /* AWSAuthCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D695011D2AFC958300410523 /* AWSAuthCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D69501262AFC959200410523 /* AWSCognitoIdentityProvider.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69501192AFC958300410523 /* AWSCognitoIdentityProvider.xcframework */; };
-		D69501272AFC959300410523 /* AWSCognitoIdentityProvider.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D69501192AFC958300410523 /* AWSCognitoIdentityProvider.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D69501282AFC959300410523 /* AWSCognitoIdentityProviderASF.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D695011C2AFC958300410523 /* AWSCognitoIdentityProviderASF.xcframework */; };
-		D69501292AFC959300410523 /* AWSCognitoIdentityProviderASF.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D695011C2AFC958300410523 /* AWSCognitoIdentityProviderASF.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D695012A2AFC959300410523 /* AWSCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69501182AFC958300410523 /* AWSCore.xcframework */; };
-		D695012B2AFC959300410523 /* AWSCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D69501182AFC958300410523 /* AWSCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D695012C2AFC959300410523 /* AWSIoT.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D695011A2AFC958300410523 /* AWSIoT.xcframework */; };
-		D695012D2AFC959300410523 /* AWSIoT.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D695011A2AFC958300410523 /* AWSIoT.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D695012E2AFC959400410523 /* AWSMobileClientXCF.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D695011B2AFC958300410523 /* AWSMobileClientXCF.xcframework */; };
-		D695012F2AFC959400410523 /* AWSMobileClientXCF.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D695011B2AFC958300410523 /* AWSMobileClientXCF.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D6ABA3462B7E03E700BFC847 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = D6ABA3452B7E03E700BFC847 /* Starscream */; };
+		DD470BF5FF406B9DAECF1379 /* Pods_RoamDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4017BD5A2B92FB2958409D31 /* Pods_RoamDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,13 +42,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D695012F2AFC959400410523 /* AWSMobileClientXCF.xcframework in Embed Frameworks */,
-				D69501252AFC959200410523 /* AWSAuthCore.xcframework in Embed Frameworks */,
-				D695012B2AFC959300410523 /* AWSCore.xcframework in Embed Frameworks */,
-				D69501292AFC959300410523 /* AWSCognitoIdentityProviderASF.xcframework in Embed Frameworks */,
-				D69501272AFC959300410523 /* AWSCognitoIdentityProvider.xcframework in Embed Frameworks */,
-				D695012D2AFC959300410523 /* AWSIoT.xcframework in Embed Frameworks */,
-				D69501152AFC94C700410523 /* Roam.xcframework in Embed Frameworks */,
+				D63387F52B860A23000B5DB6 /* AWSMobileClientXCF.xcframework in Embed Frameworks */,
+				D63387EF2B860A22000B5DB6 /* AWSCognitoIdentityProviderASF.xcframework in Embed Frameworks */,
+				D63387F72B860A23000B5DB6 /* MqttCocoaAsyncSocket.xcframework in Embed Frameworks */,
+				D63387ED2B860A22000B5DB6 /* AWSCognitoIdentityProvider.xcframework in Embed Frameworks */,
+				D63387F12B860A22000B5DB6 /* AWSCore.xcframework in Embed Frameworks */,
+				D63387EB2B860A22000B5DB6 /* AWSAuthCore.xcframework in Embed Frameworks */,
+				D63387F92B860A24000B5DB6 /* Roam.xcframework in Embed Frameworks */,
+				D63387F32B860A22000B5DB6 /* AWSIoT.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +57,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4017BD5A2B92FB2958409D31 /* Pods_RoamDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoamDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A4188897E87B2DCF3646B5 /* Pods-RoamDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoamDemo.release.xcconfig"; path = "Target Support Files/Pods-RoamDemo/Pods-RoamDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9CB8FE3CC493B326EE95C55D /* Pods-RoamDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoamDemo.debug.xcconfig"; path = "Target Support Files/Pods-RoamDemo/Pods-RoamDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D60D37A42AFCD15100A7C3C8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D63387702B845E3E000B5DB6 /* AWSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSCore.xcframework; sourceTree = "<group>"; };
+		D633879E2B845E3F000B5DB6 /* AWSCognitoIdentityProvider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSCognitoIdentityProvider.xcframework; sourceTree = "<group>"; };
+		D633879F2B845E3F000B5DB6 /* MqttCocoaAsyncSocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MqttCocoaAsyncSocket.xcframework; sourceTree = "<group>"; };
+		D63387A02B845E3F000B5DB6 /* AWSIoT.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSIoT.xcframework; sourceTree = "<group>"; };
+		D63387A12B845E3F000B5DB6 /* AWSMobileClientXCF.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSMobileClientXCF.xcframework; sourceTree = "<group>"; };
+		D63387A22B845E3F000B5DB6 /* AWSCognitoIdentityProviderASF.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSCognitoIdentityProviderASF.xcframework; sourceTree = "<group>"; };
+		D63387A32B845E3F000B5DB6 /* AWSAuthCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSAuthCore.xcframework; sourceTree = "<group>"; };
+		D63387D62B845E4F000B5DB6 /* Roam.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Roam.xcframework; sourceTree = "<group>"; };
 		D69500F92AFC922200410523 /* RoamDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoamDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D69500FC2AFC922200410523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D69500FE2AFC922200410523 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,13 +78,6 @@
 		D69501082AFC922400410523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D695010A2AFC922400410523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D69501102AFC947800410523 /* RoamHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoamHelper.swift; sourceTree = "<group>"; };
-		D69501122AFC94BB00410523 /* Roam.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Roam.xcframework; sourceTree = "<group>"; };
-		D69501182AFC958300410523 /* AWSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSCore.xcframework; sourceTree = "<group>"; };
-		D69501192AFC958300410523 /* AWSCognitoIdentityProvider.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSCognitoIdentityProvider.xcframework; sourceTree = "<group>"; };
-		D695011A2AFC958300410523 /* AWSIoT.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSIoT.xcframework; sourceTree = "<group>"; };
-		D695011B2AFC958300410523 /* AWSMobileClientXCF.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSMobileClientXCF.xcframework; sourceTree = "<group>"; };
-		D695011C2AFC958300410523 /* AWSCognitoIdentityProviderASF.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSCognitoIdentityProviderASF.xcframework; sourceTree = "<group>"; };
-		D695011D2AFC958300410523 /* AWSAuthCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AWSAuthCore.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,24 +85,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D695012E2AFC959400410523 /* AWSMobileClientXCF.xcframework in Frameworks */,
-				D695012C2AFC959300410523 /* AWSIoT.xcframework in Frameworks */,
-				D69501282AFC959300410523 /* AWSCognitoIdentityProviderASF.xcframework in Frameworks */,
-				D69501242AFC959200410523 /* AWSAuthCore.xcframework in Frameworks */,
-				D69501142AFC94C700410523 /* Roam.xcframework in Frameworks */,
-				D69501262AFC959200410523 /* AWSCognitoIdentityProvider.xcframework in Frameworks */,
-				D695012A2AFC959300410523 /* AWSCore.xcframework in Frameworks */,
+				D63387F62B860A23000B5DB6 /* MqttCocoaAsyncSocket.xcframework in Frameworks */,
+				D6ABA3462B7E03E700BFC847 /* Starscream in Frameworks */,
+				DD470BF5FF406B9DAECF1379 /* Pods_RoamDemo.framework in Frameworks */,
+				D63387F22B860A22000B5DB6 /* AWSIoT.xcframework in Frameworks */,
+				D63387EC2B860A22000B5DB6 /* AWSCognitoIdentityProvider.xcframework in Frameworks */,
+				D63387EE2B860A22000B5DB6 /* AWSCognitoIdentityProviderASF.xcframework in Frameworks */,
+				D63387F42B860A23000B5DB6 /* AWSMobileClientXCF.xcframework in Frameworks */,
+				D63387F02B860A22000B5DB6 /* AWSCore.xcframework in Frameworks */,
+				D63387F82B860A24000B5DB6 /* Roam.xcframework in Frameworks */,
+				D63387EA2B860A22000B5DB6 /* AWSAuthCore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6050ACD49BA13989753F80B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4017BD5A2B92FB2958409D31 /* Pods_RoamDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68E282DA066B781EF0B69445 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CB8FE3CC493B326EE95C55D /* Pods-RoamDemo.debug.xcconfig */,
+				60A4188897E87B2DCF3646B5 /* Pods-RoamDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D633876F2B845E3E000B5DB6 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				D63387702B845E3E000B5DB6 /* AWSCore.xcframework */,
+				D633879E2B845E3F000B5DB6 /* AWSCognitoIdentityProvider.xcframework */,
+				D633879F2B845E3F000B5DB6 /* MqttCocoaAsyncSocket.xcframework */,
+				D63387A02B845E3F000B5DB6 /* AWSIoT.xcframework */,
+				D63387A12B845E3F000B5DB6 /* AWSMobileClientXCF.xcframework */,
+				D63387A22B845E3F000B5DB6 /* AWSCognitoIdentityProviderASF.xcframework */,
+				D63387A32B845E3F000B5DB6 /* AWSAuthCore.xcframework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
 		D69500F02AFC922100410523 = {
 			isa = PBXGroup;
 			children = (
 				D69500FB2AFC922200410523 /* RoamDemo */,
 				D69500FA2AFC922200410523 /* Products */,
+				68E282DA066B781EF0B69445 /* Pods */,
+				6050ACD49BA13989753F80B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,8 +153,8 @@
 		D69500FB2AFC922200410523 /* RoamDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D69501172AFC958300410523 /* Framework */,
-				D69501122AFC94BB00410523 /* Roam.xcframework */,
+				D63387D62B845E4F000B5DB6 /* Roam.xcframework */,
+				D633876F2B845E3E000B5DB6 /* Framework */,
 				D69500FC2AFC922200410523 /* AppDelegate.swift */,
 				D69500FE2AFC922200410523 /* SceneDelegate.swift */,
 				D69501002AFC922200410523 /* LoginViewController.swift */,
@@ -123,19 +168,6 @@
 			path = RoamDemo;
 			sourceTree = "<group>";
 		};
-		D69501172AFC958300410523 /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				D69501182AFC958300410523 /* AWSCore.xcframework */,
-				D69501192AFC958300410523 /* AWSCognitoIdentityProvider.xcframework */,
-				D695011A2AFC958300410523 /* AWSIoT.xcframework */,
-				D695011B2AFC958300410523 /* AWSMobileClientXCF.xcframework */,
-				D695011C2AFC958300410523 /* AWSCognitoIdentityProviderASF.xcframework */,
-				D695011D2AFC958300410523 /* AWSAuthCore.xcframework */,
-			);
-			path = Framework;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D695010D2AFC922400410523 /* Build configuration list for PBXNativeTarget "RoamDemo" */;
 			buildPhases = (
+				61810219734611E02567D6F7 /* [CP] Check Pods Manifest.lock */,
 				D69500F52AFC922200410523 /* Sources */,
 				D69500F62AFC922200410523 /* Frameworks */,
 				D69500F72AFC922200410523 /* Resources */,
@@ -153,6 +186,9 @@
 			dependencies = (
 			);
 			name = RoamDemo;
+			packageProductDependencies = (
+				D6ABA3452B7E03E700BFC847 /* Starscream */,
+			);
 			productName = RoamDemo;
 			productReference = D69500F92AFC922200410523 /* RoamDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -181,6 +217,9 @@
 				Base,
 			);
 			mainGroup = D69500F02AFC922100410523;
+			packageReferences = (
+				D6ABA3442B7E03E700BFC847 /* XCRemoteSwiftPackageReference "Starscream" */,
+			);
 			productRefGroup = D69500FA2AFC922200410523 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -202,6 +241,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61810219734611E02567D6F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RoamDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D69500F52AFC922200410523 /* Sources */ = {
@@ -354,9 +418,11 @@
 		};
 		D695010E2AFC922400410523 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CB8FE3CC493B326EE95C55D /* Pods-RoamDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -387,9 +453,11 @@
 		};
 		D695010F2AFC922400410523 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60A4188897E87B2DCF3646B5 /* Pods-RoamDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -440,6 +508,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D6ABA3442B7E03E700BFC847 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D6ABA3452B7E03E700BFC847 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D6ABA3442B7E03E700BFC847 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D69500F12AFC922100410523 /* Project object */;
 }
