@@ -33,7 +33,6 @@ final class RoamHelper {
         Roam.initialize("")
         
         Roam.requestLocation()
-        #error("Add Publish Key")
     }
     
     //MARK: -
@@ -231,4 +230,90 @@ extension RoamHelper {
        print("applicationWillForeground")
         Roam.setTrackingInAppState(.Foreground)
    }
+}
+
+
+extension RoamHelper { //CocoaMQTT5Delegate
+//    func mqtt5(_ mqtt5: CocoaMQTT5, didConnectAck ack: CocoaMQTTCONNACKReasonCode, connAckData: MqttDecodeConnAck?) {
+//        <#code#>
+//    }
+//
+//    func mqtt5(_ mqtt5: CocoaMQTT5, didPublishMessage message: CocoaMQTT5Message, id: UInt16) {
+//        <#code#>
+//    }
+//
+//    func mqtt5(_ mqtt5: CocoaMQTT5, didPublishAck id: UInt16, pubAckData: MqttDecodePubAck?) {
+//        <#code#>
+//    }
+//
+//    func mqtt5(_ mqtt5: CocoaMQTT5, didPublishRec id: UInt16, pubRecData: MqttDecodePubRec?) {
+//        <#code#>
+//    }
+//
+//    func mqtt5(_ mqtt5: CocoaMQTT5, didReceiveMessage message: CocoaMQTT5Message, id: UInt16, publishData: MqttDecodePublish?) {
+//        <#code#>
+//    }
+//
+//    func mqtt5(_ mqtt5: CocoaMQTT5, didSubscribeTopics success: NSDictionary, failed: [String], subAckData: MqttDecodeSubAck?) {
+//        <#code#>
+//    }
+//
+//    func mqtt5(_ mqtt5: CocoaMQTT5, didUnsubscribeTopics topics: [String], unsubAckData: MqttDecodeUnsubAck?) {
+//        <#code#>
+//    }
+//
+//    func mqtt5(_ mqtt5: CocoaMQTT5, didReceiveDisconnectReasonCode reasonCode: CocoaMQTTDISCONNECTReasonCode) {
+//        <#code#>
+//    }
+//
+//    func mqtt5(_ mqtt5: CocoaMQTT5, didReceiveAuthReasonCode reasonCode: CocoaMQTTAUTHReasonCode) {
+//        <#code#>
+//    }
+//
+//    func mqtt5DidPing(_ mqtt5: CocoaMQTT5) {
+//        <#code#>
+//    }
+//
+//    func mqtt5DidReceivePong(_ mqtt5: CocoaMQTT5) {
+//        <#code#>
+//    }
+//
+//    func mqtt5DidDisconnect(_ mqtt5: CocoaMQTT5, withError err: (Error)?) {
+//        <#code#>
+//    }
+    
+    func CocoaMqtt_5() {
+        ///MQTT 5.0
+        let clientID = "CocoaMQTT-" + String(ProcessInfo().processIdentifier)
+        let mqtt5 = CocoaMQTT5(clientID: clientID, host: "broker.emqx.io", port: 1883)
+
+        let connectProperties = MqttConnectProperties()
+        connectProperties.topicAliasMaximum = 0
+        connectProperties.sessionExpiryInterval = 0
+        connectProperties.receiveMaximum = 100
+        connectProperties.maximumPacketSize = 500
+        mqtt5.connectProperties = connectProperties
+
+        mqtt5.username = "test"
+        mqtt5.password = "public"
+        mqtt5.willMessage = CocoaMQTT5Message(topic: "/will", string: "dieout")
+        mqtt5.keepAlive = 60
+//        mqtt5.delegate = self
+        mqtt5.connect()
+    }
+    
+    func cocoaMqtt_3_1_1() {
+        ///MQTT 3.1.1
+        let clientID = "CocoaMQTT-" + String(ProcessInfo().processIdentifier)
+        let mqtt = CocoaMQTT(clientID: clientID, host: "broker.emqx.io", port: 1883)
+        mqtt.username = "test"
+        mqtt.password = "public"
+        mqtt.willMessage = CocoaMQTTMessage(topic: "/will", string: "dieout")
+        mqtt.keepAlive = 60
+//        mqtt.delegate = self
+        mqtt.connect()
+    }
+    
+    
+    
 }
